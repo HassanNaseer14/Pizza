@@ -1,0 +1,50 @@
+{% extends "main/base.html"%}
+{% load static%}
+{% block head %}
+<title>
+    Home - BurgerBoy
+</title>
+{% endblock %}
+{% block content %}
+<br>
+<br>
+<div class="home-card">
+
+    <img src="{% static 'images/background.jpg'%}">
+
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="del">
+    <div><h1>Cooking Everything Declicious!</h1></div>
+    
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<section id="zingers">
+    <div  class="container" >
+        <span><img class="img" src="{% static 'images/zinger.jpg'%}"></span>
+        <span><img class="img" src="{% static 'images/zinger2.jpg'%}"></span>
+        <span><img class="img" src="{% static 'images/zinger3.jpg'%}"></span>
+        <div class="sa">
+            <h1>"Satisfying our customers is our number one priority"</h1>
+        </div>
+        <div class="btn-1">
+            <button><a href="menu/">Have a look at our menu</a></button>
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+
+{% endblock %}

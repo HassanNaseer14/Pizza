@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="icon/png" href="{% static 'images/logo.png'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
+    {% block head %}
+    {% endblock %}
+
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+
+            <nav>
+
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="">Reservations</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <br>
+    <br>
+    {% block content %}{% endblock %}
+</body>
+
+</html>
