@@ -1,64 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+
+
+
 html {
     overflow-x: hidden;
     padding: 0px; 
     margin: 0px;
-    width: 100%;
+   
 }
 body{
     font-family: Georgia;
     margin: 0;
     background-color: whitesmoke;
-    
-}
-
-.wrapper{
-    width: 100%;
-    max-width: 1180px;
-    
-    padding: 0 10px;
-    margin: 0 auto;
-
-    
    
-}
-
-
-
-header nav{
     
-    float:center;
-
-
 }
 
-header nav h2{
-  
-    height: 0;
-    margin: 0;
+
+.nav  {
+    width: 110%;
+    
+    height: 100px;
+    background-color: black;
 }
 
-header nav li{
-    float: left;
+
+.nav-ul {
     list-style-type: none;
-    margin: 10px 20px;
+    align-items: center;
+    
+
+}
+.nav-ul li a {
+    text-decoration: none;
+    float: left;
+    position: relative;
+    top: 50px;
+    font-family:Roboto;
+    color:whitesmoke;
+    padding: 14px 16px;
     
 }
 
-header nav li a{
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    padding: 14px 16px;
-
+.nav-ul  li a:hover {
+    
+    background-color: whitesmoke;
+    border-radius: 5px;
+    color: black;
 }
 
-header nav li a:hover{
-   border-bottom: 6px solid tomato;
-    scroll-behavior: smooth;
-    opacity: 0.6;
 
 
-}
 
 .home-card img {
     width: 110%;
@@ -114,6 +108,7 @@ header nav li a:hover{
     text-decoration: none;
     color: white;
     font-weight:bold;
+   
 }
 
 .btn-1 button {
@@ -131,24 +126,44 @@ header nav li a:hover{
 /* This part is intended for the menu of the webpage, all the settings
 regarding that to be made here*/
 
-.menu-c {
-    width:100pc;
-    height: 80pc;
-    background-color: rgb(71, 38, 189);
+#menu{
+    width: 110%;
+    height: 60pc;
+    background-color:coral;
 }
-
-
 
 .items{
-    width: 20%;
-    height: 30%;
-    background-color: rgb(226, 202, 202);
+    width:24pc;
+    height:28pc;
+    background-color: rgb(255, 80, 133);
+   
 }
+
+.I{
+    width: 20pc;
+    position: relative;
+    top:20px;
+    left:20px;
+
+}
+
+
+.items h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+
+
 
 /* Views to be created here ~ !!*/
 
 
 @media screen and (max-width:900px){
+    html{
+        overflow-x: hidden;
+    }
     .img{
         width:60%;
         display:flex;
@@ -164,17 +179,14 @@ regarding that to be made here*/
         font-size: 60px;
 
     }
-    header nav li a {
-        margin: 0px;
-        font-size: 30px;
-        padding:0px;
-    }
+ 
     .del{
         font-size:20px;
         
     }
 }
 
+    
 
 
 
@@ -182,9 +194,8 @@ regarding that to be made here*/
 
 /* Create your media queries here */
 @media screen and (max-width:420px){
-    header nav li a{
-        padding:17px;
-    }
+
+
 
     .del{
         text-align: center;
