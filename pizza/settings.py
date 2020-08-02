@@ -85,7 +85,8 @@ DATABASES = {
         'NAME': 'Pizza',
         'USER': 'postgres',
         'PASSWORD':'1234',
-        'HOST' : 'burgerboy.herokuapp.com'
+        'HOST' : 'burgerboy.herokuapp.com',
+        'CONN_MAX_AGE': '500'
 
     }
 }
@@ -126,6 +127,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 STATIC_URL = '/static/'
 
