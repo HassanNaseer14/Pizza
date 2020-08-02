@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': 'Pizza',
         'USER': 'postgres',
         'PASSWORD':'1234',
-        'CONN_MAX_AGE': '500'
+        'HOST': 'ec2-52-200-48-116.compute-1.amazonaws.com'
 
     }
 }
