@@ -28,7 +28,7 @@ SECRET_KEY = '2f_f(b_h5r_yt2^%9iv53irwsg#bu)#53bcy2u9rpole-^0djv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [gunicorn]
 
 
 # Application definition
