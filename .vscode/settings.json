@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "c:\\Users\\Hassan\\Envs\\tutorial\\Scripts\\python.exe"
+    "python.pythonPath": "c:\\Users\\Hassan\\Envs\\tutorial\\Scripts\\python.exe",
+    "python.formatting.provider": "black"
 }

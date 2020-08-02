@@ -1,0 +1,15 @@
+{% extends 'main/base.html'%}
+{% block head %}
+    <title>Place an Order</title>
+{% endblock %}
+{% block content %}
+ 
+    {% if user.is_authenticated %}
+        <form method="post">
+        {% csrf_token%}
+        
+        {{ form.as_p }}
+        <input type="submit" >
+        </form>
+    {% endif %}
+{% endblock %}

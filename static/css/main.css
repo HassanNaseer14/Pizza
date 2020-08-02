@@ -128,14 +128,19 @@ regarding that to be made here*/
 
 #menu{
     width: 110%;
-    height: 60pc;
-    background-color:coral;
+    color:white;
+    background-color:red;
+    float: left;
+    margin: -10px;
+   
 }
 
 .items{
     width:24pc;
     height:28pc;
-    background-color: rgb(255, 80, 133);
+    background-color: black;
+    float: left;
+    margin: 10px;
    
 }
 

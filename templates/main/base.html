@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
-<html>
+<html> 
 
 <head>
     
@@ -20,7 +20,13 @@
         <ul class="nav-ul"> 
             <li><a href="/">Home</a></li>
             <li><a href="/menu">Menu</a></li>
-            <li><a>About us</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="/contact">Place order</a></li>
+                <li><a href="/logout">Logout</a><li>
+            {% else %}
+                <li><a href="/accounts/register">Register</a></li>
+                <li><a href="/login">Login</a><li>
+            {% endif %}
         </ul>
     
     </div>
