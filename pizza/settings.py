@@ -85,11 +85,16 @@ DATABASES = {
         'NAME': 'Pizza',
         'USER': 'postgres',
         'PASSWORD':'1234',
-        'HOST' : 'burgerboy.herokuapp.com',
         'CONN_MAX_AGE': '500'
 
     }
 }
+
+import dj_database_url
+
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
+
 
 
 # Password validation
