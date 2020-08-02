@@ -85,8 +85,8 @@ DATABASES = {
         'NAME': 'Pizza',
         'USER': 'postgres',
         'PASSWORD':'1234',
-        
-        
+        'HOST' : 'burgerboy.herokuapp.com'
+
     }
 }
 
