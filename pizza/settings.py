@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'pizza.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Pizza',
-        'USER': 'postgres',
-        'PASSWORD':'1234',
-        'HOST': 'ec2-52-200-48-116.compute-1.amazonaws.com'
+        'NAME': 'Demo',
+        'USER': 'gjumieps',
+        'PASSWORD':'iDLTstx6RlfCcTm1oSu8GxHvTYRR3q67 ',
+        'HOST': 'postgres://gjumieps:iDLTstx6RlfCcTm1oSu8GxHvTYRR3q67@kandula.db.elephantsql.com:5432/gjumieps'
 
     }
 }
